@@ -39,7 +39,7 @@ canvas {
   width: 100%;
   height: 100vh;
   z-index: 2;
-  background-color: rgb(65, 0, 0, 0.5);
+  background-color: rgba(97, 71, 0, 0.4);
   transition: opacity 500ms ease-in-out;
   transition-delay: 250ms;
 }
@@ -67,7 +67,7 @@ canvas {
 
 .countdown h1 {
   font-size: 6vw;
-  font-weight: 300;
+  font-weight: 700;
   text-transform: uppercase;
 }
 .countdown h2 {
@@ -80,26 +80,36 @@ canvas {
   margin-bottom: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 a,
 a:visited {
-  color: #ff5131;
+  color: #ffe882;
 }
 
 a:hover {
-  color: #fd735b;
+  color: #fff5c7;
 }
 
 a:active {
-  color: #ffa0a0;
+  color: #fff;
 }
 
 .botones {
   display: flex;
-  justify-content: space-around;
+  justify-content: start;
+}
+
+.botones span {
+  flex: 0.25;
+  padding: 1%;
+  font-size: larger;
 }
 
 a.boton {
-  flex: 1;
+  flex: 0.25;
   padding: 1%;
   background-color: #d50000;
   color: white;
@@ -113,11 +123,19 @@ a.boton:hover {
 }
 
 a.boton.discord {
-  background-color: #aa00ff;
+  background-color: #5865f2;
 }
 
 a.boton.discord:hover {
-  background-color: #e254ff;
+  background-color: #737ef1;
+}
+
+a.boton.twitch {
+  background-color: #9146ff;
+}
+
+a.boton.twitch:hover {
+  background-color: #9f61fd;
 }
 
 a.boton.peli {
@@ -151,7 +169,7 @@ a.github:active {
 
 #clock .time {
   display: inline-block;
-  font-family: "Anonymous Pro", monospace;
+  font-family: "Inconsolata", monospace;
   font-size: 10vw;
 }
 
@@ -177,7 +195,7 @@ a.github:active {
 span.labels {
   display: block;
   font-size: 1.5vw;
-  font-family: "Source Serif Pro", serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 /* MEDIA QUERIES */
