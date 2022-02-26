@@ -115,6 +115,7 @@ a.boton {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
+  font-weight: 700;
   font-size: larger;
 }
 
