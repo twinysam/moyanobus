@@ -39,7 +39,7 @@ canvas {
   width: 100%;
   height: 100vh;
   z-index: 2;
-  background-color: rgba(97, 71, 0, 0.4);
+  background-color: rgba(0, 34, 97, 0.4);
   transition: opacity 500ms ease-in-out;
   transition-delay: 250ms;
 }
@@ -70,6 +70,12 @@ canvas {
   font-weight: 700;
   text-transform: uppercase;
 }
+
+.countdown h1 span {
+    opacity: 0.2;
+    text-decoration: line-through;    
+}
+
 .countdown h2 {
   font-size: 4vw;
   margin-top: 1.5%;
@@ -86,11 +92,11 @@ a {
 
 a,
 a:visited {
-  color: #ffe882;
+  color: #829fff;
 }
 
 a:hover {
-  color: #fff5c7;
+  color: #c7d8ff;
 }
 
 a:active {
@@ -137,6 +143,14 @@ a.boton.twitch {
 
 a.boton.twitch:hover {
   background-color: #9f61fd;
+}
+
+a.boton.instagram {
+  background-color: #B900B0;
+}
+
+a.boton.instagram:hover {
+  background-color: #e800dd;
 }
 
 a.boton.peli {
